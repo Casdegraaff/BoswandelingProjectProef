@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
@@ -20,7 +21,7 @@ public class PlayerScript : MonoBehaviour
         {
             game_manager.StopSpawning();
             Debug.Log("you won!");
-
+            
         }
     }
     // Start is called before the first frame update
