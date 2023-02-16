@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     void SpawnNut()
     {
         float tempPos = Random.Range(-2.5f, 2.5f);
-        Instantiate(Nut_prefab, new Vector3(tempPos, 5.5f, 0), Quaternion.identity);
+        Instantiate(Nut_prefab, new Vector3(tempPos, 10f, 0), Quaternion.identity);
     }
 
     public void StopSpawning()
