@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16ed4154b1016ad4584a32878df6d391
+guid: e945beb2d51bb814cad525544318036d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,91 +139,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Piece_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 245
-        width: 169
-        height: 223
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 654df3055236dec41876c59fee814319
-      internalID: -2086689848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pieces_1
-      rect:
-        serializedVersion: 2
-        x: 182
-        y: 289
-        width: 274
-        height: 172
-      alignment: 9
-      pivot: {x: 0.5224398, y: 0.49106315}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b65c298505406354e9cb96411bc9081e
-      internalID: -1917301000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Piece_2
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 51
-        width: 223
-        height: 172
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 930903d6c33fb1145b697d365cb6f01e
-      internalID: 1488955445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pieces_3
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 3
-        width: 172
-        height: 274
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54587e464602ca8429a8f5bdc56d6b8a
-      internalID: 400035659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -234,11 +150,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Pieces_3: 400035659
-      Pieces_1: -1917301000
-      Piece_0: -2086689848
-      Piece_2: 1488955445
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

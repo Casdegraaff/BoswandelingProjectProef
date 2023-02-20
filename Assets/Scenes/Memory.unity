@@ -847,9 +847,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 619611754}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb6cff1c665ac9343a6463c14533ef2c, type: 3}
+  m_Script: {fileID: 11500000, guid: 01114821136b9604f8dccee596bc2b3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originalCard: {fileID: 1039263267}
+  images:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &619611757
 Transform:
   m_ObjectHideFlags: 0
@@ -1017,7 +1025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &890191077
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1321,9 +1329,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1039263263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e3b20ed80958744b165cce39895f73, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ad4ff9bec75dc54a995f6a39a15f369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardBack: {fileID: 1601051038}
+  controller: {fileID: 619611756}
 --- !u!65 &1039263268
 BoxCollider:
   m_ObjectHideFlags: 0
