@@ -9,7 +9,7 @@ public class PlayerScript : MonoBehaviour
 
     public int score = 0;
     public GameManager game_manager;
-    public MenuManager menu_manager;
+    public NutMenuManager menu_manager;
     private void OnTriggerEnter2D(Collider2D collison)
     {
         if (collison.tag == "Nut")
