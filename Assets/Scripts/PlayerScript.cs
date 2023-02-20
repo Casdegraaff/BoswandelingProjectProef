@@ -9,6 +9,7 @@ public class PlayerScript : MonoBehaviour
 
     public int score = 0;
     public GameManager game_manager;
+    public MenuManager menu_manager;
     private void OnTriggerEnter2D(Collider2D collison)
     {
         if (collison.tag == "Nut")
@@ -21,7 +22,8 @@ public class PlayerScript : MonoBehaviour
         {
             game_manager.StopSpawning();
             Debug.Log("you won!");
-            
+            menu_manager.WinScreen();
+
         }
     }
     // Start is called before the first frame update

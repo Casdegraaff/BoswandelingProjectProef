@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnNut", 2,2);
+        InvokeRepeating("SpawnNut", 0.2f,0.2f);
     }
 
     // Update is called once per frame
