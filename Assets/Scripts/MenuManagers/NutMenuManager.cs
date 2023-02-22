@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
 
 public class NutMenuManager : MonoBehaviour
 {
-    public GameObject game_manager,start_menu,win_screen;
+    public GameObject game_manager,start_menu,win_screen,ui;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +23,12 @@ public class NutMenuManager : MonoBehaviour
     {
         start_menu.SetActive(false);
         game_manager.SetActive(true);
+        ui.SetActive(true);
     }
 
     public void WinScreen()
     {
+        ui.SetActive(false);
         game_manager.SetActive(false);
         win_screen.SetActive(true);
     }
