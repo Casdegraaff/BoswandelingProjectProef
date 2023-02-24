@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject Nut_prefab;
     public int targetScore = 10;
     public PlayerScript player_script;
-    public Text text;
+    public TMP_Text text;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnNut", 0.2f,0.2f);
+        InvokeRepeating("SpawnNut", 0.4f,0.4f);
     }
 
     // Update is called once per frame
