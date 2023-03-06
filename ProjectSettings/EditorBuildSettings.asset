@@ -6,13 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path:
+    path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NutDrop.unity
     guid: 34506a1b0e253184583dabd3d145cc7b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/GPSMap.unity
+    guid: adea4425f210bfd4ca5b9b3b03b983a1
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: e610c5520696e524bb624870e845c7cd, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: a90b1dfcb4451ee449745ebdf3359c11, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: d3759008ca3fb254d9a8fbc9f2998c6a, type: 2}
