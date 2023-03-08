@@ -8,6 +8,7 @@ public class CardManager : MonoBehaviour {
   public const int gridRows = 4;
   public const int gridCols = 3;
 
+  //De positie van de kaarten van elkaar\\
   public const float offsetX = 1.5f;
   public const float offsetY = 2.5f;
 
