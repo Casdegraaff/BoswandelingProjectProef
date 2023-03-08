@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MemoryMenuManager : MonoBehaviour
 {
@@ -21,12 +22,10 @@ public class MemoryMenuManager : MonoBehaviour
     public void StartButton()
     {
         start_menu.SetActive(false);
-       
     }
 
     public void WinScreen()
-    {
-       
+    {  
         win_screen.SetActive(true);
     }
 
