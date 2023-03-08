@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PuzzlePieces : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class PuzzlePieces : MonoBehaviour
     {
         RightPosition = transform.position;
         // spawn gebied van de puzzelstukjes
-        transform.position = new Vector3(Random.Range(-2.5f, 2.5f), Random.Range(-2f, -4f));
+        transform.position = new Vector3(Random.Range(-1.25f, 1.25f), Random.Range(-1.5f, -4f));
     }
 
 
