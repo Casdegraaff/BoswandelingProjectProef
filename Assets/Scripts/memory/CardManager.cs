@@ -1,12 +1,13 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class CardManager : MonoBehaviour {
   //De Instellingen voor het aantal kaarten\\
   public const int gridRows = 4;
   public const int gridCols = 3;
 
-  //De positie van de kaarten\\
   public const float offsetX = 1.5f;
   public const float offsetY = 2.5f;
 
@@ -16,12 +17,16 @@ public class CardManager : MonoBehaviour {
   //De Array waar alle images ingaan van de kaarten\\
   [SerializeField] private Sprite[] images;
 
+  //Text voor de score\\
+  [SerializeField] private TextMesh scoreLabel;
+
     //De check welke kaarten er zijn om geflipt\\
     private memoryCard _firstRevealed;
     private memoryCard _secondRevealed;
 
     //Score bijhouden\\
-    private int _score = 0;    
+    private int _score = 0; 
+       
 
     void Start() {
         //De vector om de orginele kaart zijn positie op te halen\\
@@ -87,7 +92,7 @@ public class CardManager : MonoBehaviour {
     private IEnumerator CheckMatch() {
         if (_firstRevealed.id == _secondRevealed.id) {
             _score++;    
-        Debug.Log("Score: " + _score);
+        scoreLabel.text = "Score: " + _score;    
         }
         else {
             yield return new WaitForSeconds(.5f);
