@@ -23,27 +23,27 @@ public class GPSLocation : MonoBehaviour
 
     IEnumerator GPSLoc()
     {
-        //checks if phone has location on
+        //checks of de telefoon locatie aan hebt
         if(!Input.location.isEnabledByUser)
             yield break;
 
         //starts 
         Input.location.Start();
-        //wait until service initialize
+        //Wachts tot dat de service begint
         int maxWait = 20;
         while (Input.location.status == LocationServiceStatus.Initializing && maxWait > 0)
         {
             yield return new WaitForSeconds(1);
             maxWait--;
         }
-        //service didn't init in 20 seconds
+        //Service werd niet geinitialiseerd na 20 seconden
         if (maxWait < 1)
         {
             GPSStatus.text = "Time out";
             yield break;
         }
         
-        //connection failed
+        //Connectie onderbroken
         if (Input.location.status == LocationServiceStatus.Failed)
         {
             GPSStatus.text = "Can't find device location";
@@ -53,9 +53,9 @@ public class GPSLocation : MonoBehaviour
         {
             GPSStatus.text = "Running";
             InvokeRepeating("UpdateGPSData", 0.5f, 1f);
-            //Access granted
+            //Toegang verleend
         }
-    }// end of GPSLoc
+    }// Einde van GPSLoc
 
     private void UpdateGPSData()
     {
@@ -67,12 +67,12 @@ public class GPSLocation : MonoBehaviour
             altitudeValue.text = Input.location.lastData.altitude.ToString();
             horizontalAccuracyValue.text = Input.location.lastData.horizontalAccuracy.ToString();
             timestampValue.text = Input.location.lastData.timestamp.ToString();
-            //access granted to GPS values and it has been initialized
+            //Toegang verleend aan gps locatie en geinitialiseerd
         }
         else
         {
-            // service is stopped
+            // service is gestopt
         }
 
-    }//end of GpsDataUpdate
+    }//Einde van GpsDataUpdate
 }

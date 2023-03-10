@@ -5,7 +5,7 @@ using UnityEngine;
 public class GroundScript : MonoBehaviour
 {
     public PlayerScript player_script;
-    // Start is called before the first frame update
+    // Als de noot de vloer raakt dan word hij verwijderd
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Nut")
