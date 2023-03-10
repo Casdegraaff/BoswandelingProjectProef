@@ -12,12 +12,13 @@ public class PlayerScript : MonoBehaviour
     public NutMenuManager menu_manager;
     private void OnTriggerEnter2D(Collider2D collison)
     {
+        //als een noot de mand raakt hier, dan gaat de score omhoog met het getal wat je hier neerzet
         if (collison.tag == "Nut")
         {
             score += 1;
             Destroy(collison.gameObject);   //Nut
         }
-
+        //als de target score is bereikt dan stopt hij de game hier, en geeft je de winscreen
         if (score == game_manager.targetScore)
         {
             game_manager.StopSpawning();
@@ -34,7 +35,7 @@ public class PlayerScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {    //tijdelijk oplossing waar de mand kan bewegen met de pijltjestoetsen op een keybord
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(new Vector3(1, 0, 0) * speed * Time.deltaTime);
@@ -45,7 +46,7 @@ public class PlayerScript : MonoBehaviour
         }
 
         float currentXPos = transform.position.x;
-        // Line 29 controls the border of where the player is allowed to go.
+        // hier zet hij de grens van waar de speler kan komen.
         currentXPos = Mathf.Clamp(currentXPos, -2.5f, 2.5f);
         transform.position = new Vector3(currentXPos, transform.position.y, transform.position.z);
     }

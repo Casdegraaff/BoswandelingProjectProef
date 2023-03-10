@@ -19,26 +19,26 @@ public class NutMenuManager : MonoBehaviour
         
     }
 
-    public void StartButton()
+    public void StartButton()  // Hier zet hij de game aan en verbergt de startscherm
     {
         start_menu.SetActive(false);
         game_manager.SetActive(true);
         ui.SetActive(true);
     }
 
-    public void WinScreen()
+    public void WinScreen() // Hier zet hij de game uit en laat de winscreen zien
     {
         ui.SetActive(false);
         game_manager.SetActive(false);
         win_screen.SetActive(true);
     }
 
-    public void Retry()
+    public void Retry() // Laat de game opnieuw op
     {
         SceneManager.LoadScene("NutDrop");
     }
 
-    public void Exit()
+    public void Exit() // Gaat terug naar de gps map
     {
         SceneManager.LoadScene("SampleScene");
     }
