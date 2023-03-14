@@ -47,7 +47,7 @@ public class PlayerScript : MonoBehaviour
 
         float currentXPos = transform.position.x;
         // hier zet hij de grens van waar de speler kan komen.
-        currentXPos = Mathf.Clamp(currentXPos, -2.5f, 2.5f);
+        currentXPos = Mathf.Clamp(currentXPos, -1.5f, 1.5f);
         transform.position = new Vector3(currentXPos, transform.position.y, transform.position.z);
     }
 
