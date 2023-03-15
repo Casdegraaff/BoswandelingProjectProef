@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class CardManager : MonoBehaviour {
   //De Instellingen voor het aantal kaarten\\
