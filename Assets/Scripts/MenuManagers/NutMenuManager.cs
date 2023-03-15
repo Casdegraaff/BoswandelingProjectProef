@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class NutMenuManager : MonoBehaviour
 {
-    public GameObject game_manager,start_menu,win_screen,ui;
+    public GameObject game_manager,start_menu,win_screen,ui,score;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +24,7 @@ public class NutMenuManager : MonoBehaviour
         start_menu.SetActive(false);
         game_manager.SetActive(true);
         ui.SetActive(true);
+        score.SetActive(true);
     }
 
     public void WinScreen() // Hier zet hij de game uit en laat de winscreen zien
@@ -31,6 +32,7 @@ public class NutMenuManager : MonoBehaviour
         ui.SetActive(false);
         game_manager.SetActive(false);
         win_screen.SetActive(true);
+        score.SetActive(false);
     }
 
     public void Retry() // Laat de game opnieuw op
