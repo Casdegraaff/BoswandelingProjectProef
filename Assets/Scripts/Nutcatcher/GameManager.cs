@@ -12,13 +12,13 @@ public class GameManager : MonoBehaviour
     public TMP_Text text;
 
 
-    // Start is called before the first frame update
+    // Hier kan je de spawnrate van de noten aanpassen
     void Start()
     {
         InvokeRepeating("SpawnNut", 0.4f,0.4f);
     }
 
-    // Update is called once per frame
+    // Dit geeft de score weer van de game
     void Update()
     {
         text.text = player_script.score.ToString();
@@ -26,10 +26,11 @@ public class GameManager : MonoBehaviour
 
     void SpawnNut()
     {
+        //hier spawnt hij de noten tussen 2 posities, en pakt hij de noot prefab die wij willen spawnen
         float tempPos = Random.Range(-2.5f, 2.5f);
         Instantiate(Nut_prefab, new Vector3(tempPos, 10f, 0), Quaternion.identity);
     }
-
+    //dit stopt het spawning
     public void StopSpawning()
     {
         CancelInvoke();
