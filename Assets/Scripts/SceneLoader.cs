@@ -19,6 +19,10 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("Jigsaw");
     }
+    public void Loadscene4()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
 
 
 }
