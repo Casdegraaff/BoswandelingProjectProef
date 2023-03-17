@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
-{
+{   //elke game wordt geladen door een andere knop, elke LoadScene bepaaldt welke game wordt geladen bij welke knop
     public void LoadScene1()
     {
         SceneManager.LoadScene("NutDrop");
