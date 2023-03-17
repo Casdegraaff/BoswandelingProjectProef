@@ -8,15 +8,21 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/NutDrop.unity
-    guid: 34506a1b0e253184583dabd3d145cc7b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 1
+    path: Assets/Scenes/NutDrop.unity
+    guid: 34506a1b0e253184583dabd3d145cc7b
+  - enabled: 1
     path: Assets/Scenes/GPSMap.unity
     guid: adea4425f210bfd4ca5b9b3b03b983a1
+  - enabled: 1
+    path: Assets/Scenes/Jigsaw.unity
+    guid: ce35f4a6a6e8c9145a4f247d1d16e59b
+  - enabled: 1
+    path: Assets/Scenes/Memory.unity
+    guid: 1112d036591fb144391f5090895999e0
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 9fc776d145f51a841a22c93ccc12a6cc, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: a90b1dfcb4451ee449745ebdf3359c11, type: 2}
